@@ -1,0 +1,27 @@
+#!/usr/bin/expect --
+
+;# Demands 3 Input parameters
+;# username_client, password_client, ip_client
+
+set timeout 15
+
+set user_name [lindex $argv 0]
+set password [lindex $argv 1]
+set ip_ [lindex $argv 2]
+set username_server [lindex $argv 3]
+set password_server [lindex $argv 4]
+set ip_server [lindex $argv 5]
+set dir_client [lindex $argv 6]
+
+spawn ssh $user_name@$ip_
+sleep 1
+expect "password:"
+send "$password\r"
+expect "Last login"
+send "cd $dir_client\r"
+expect "$"
+send "bash script_client.sh $username_server $password_server $ip_server\r"
+expect "$"
+send "exit\r"
+expect "$"
+
