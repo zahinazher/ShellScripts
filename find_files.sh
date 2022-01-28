@@ -7,7 +7,7 @@
 # in the destination directory
 
 # It will find all files with extension '.STpkg' and move them to a directory
-# that is specified as your first argument(parameter)
+# that is specified as your first argument or parameter
 
 # Check to make sure that all arguments are present
 if [ ! $# -eq 1 ] ; then
