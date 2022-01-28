@@ -5,9 +5,9 @@ if [ ! $# -eq 1 ] ; then
   exit 0
 fi 
 
-#****************Input paramters***************#
-root_path='./'  # need to replace with real path
-#**********************************************#.
+#****************Input paramters*******************#
+root_path='./'  # need to replace with the real path
+#**************************************************#.
 
 ip_range=$1
 
