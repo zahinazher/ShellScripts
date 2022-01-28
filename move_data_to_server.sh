@@ -1,6 +1,6 @@
 #!/bin/bash
 
-
+##
 # Check to make sure that all arguments are present
 if [ ! $# -eq 0 ] ; then
   echo 'Usage: $ sh <move_data_to_server.sh>'  
